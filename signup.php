@@ -1,4 +1,5 @@
 <?php
+    include("classes/connect.php");
     include("classes/signup.php");
 
     $email = "";

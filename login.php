@@ -1,6 +1,7 @@
 <?php
 session_start();
 
+    include("classes/connect.php");
     include("classes/login.php");
 
     $email = "";
@@ -32,16 +33,16 @@ session_start();
 
     <body>
         <div class="main">
-            <form action="main.php" method="POST">
+            <form action="" method="POST">
                 <h1>Under Construction</h1>
 
                 <div class="fields">
-                    <input value="<?php echo $email ?>" type="text" placeholder="Email/Username" required>
+                    <input name="email" value="<?php echo $email ?>" type="text" placeholder="Email/Username" required>
                     <i class='bx bxs-user' ></i>
                 </div>
 
                 <div class="fields">
-                    <input value="<?php echo $password ?>" type="password" placeholder="Password" required>
+                    <input name="password" value="<?php echo $password ?>" type="password" placeholder="Password" required>
                     <i class='bx bxs-lock-alt' ></i>
                 </div>
             
